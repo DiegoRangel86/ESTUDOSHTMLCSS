@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--Você sabe o que são pseudo-elementos das CSS? Sabe como adicionar conteúdos específicos em elementos HTML utilizando pseudo-elementos? Sabe para que serve o símbolo :: usado em CSS? Pois acompanhe este vídeo até o final para responder a estas e muitas outras perguntas.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../HTML5.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elemento
+            > = Children (filho) de um elemento
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Configuração padrão das âncoras*/
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Cor do link que já cliquei/visitei*/
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        /*Quando eu clico fica amarelo*/
+        a:active{
+            color: yellow;
+        }
+        
+        .especial{
+            background-color: rgb(255, 140, 140);            
+        }
+
+        /*Pseudo-elementos*/
+        .especial::before{
+            content: '=> ';
+        }
+
+        .especial::after{
+            content: ' <=';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="externo">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="externo" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="externo">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
