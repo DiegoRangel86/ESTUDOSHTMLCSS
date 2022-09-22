@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../HTML5.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        /*odd = ímpar (2n-1), 2n é igual de 2 em 2, even par*/
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        td.num{
+           text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>                        
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 463 349</td>
+            </tr>            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">90.866.364</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nulla architecto maiores ea! Officia error consectetur culpa voluptatum eaque minima illum, ipsam aperiam illo ducimus similique quos accusantium fugit quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod illo ullam ratione, magni aperiam soluta architecto, minima quisquam animi sit. Pariatur, deserunt voluptatibus laborum distinctio quis quos rem nulla?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero quia sequi. Perspiciatis fugit tenetur, repudiandae nam laudantium, magnam ex eos nostrum adipisci minima at, culpa similique. Nam, accusantium corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores provident odio dolor dicta nulla sit temporibus vero ratione impedit ipsum rerum suscipit delectus aliquam quod architecto, accusantium nihil porro.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque autem quas, veritatis laboriosam sequi rerum esse molestias maiores exercitationem hic corporis, sit ducimus nihil et eum? Minima, velit ullam.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nulla architecto maiores ea! Officia error consectetur culpa voluptatum eaque minima illum, ipsam aperiam illo ducimus similique quos accusantium fugit quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod illo ullam ratione, magni aperiam soluta architecto, minima quisquam animi sit. Pariatur, deserunt voluptatibus laborum distinctio quis quos rem nulla?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero quia sequi. Perspiciatis fugit tenetur, repudiandae nam laudantium, magnam ex eos nostrum adipisci minima at, culpa similique. Nam, accusantium corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores provident odio dolor dicta nulla sit temporibus vero ratione impedit ipsum rerum suscipit delectus aliquam quod architecto, accusantium nihil porro.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque autem quas, veritatis laboriosam sequi rerum esse molestias maiores exercitationem hic corporis, sit ducimus nihil et eum? Minima, velit ullam.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nulla architecto maiores ea! Officia error consectetur culpa voluptatum eaque minima illum, ipsam aperiam illo ducimus similique quos accusantium fugit quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod illo ullam ratione, magni aperiam soluta architecto, minima quisquam animi sit. Pariatur, deserunt voluptatibus laborum distinctio quis quos rem nulla?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero quia sequi. Perspiciatis fugit tenetur, repudiandae nam laudantium, magnam ex eos nostrum adipisci minima at, culpa similique. Nam, accusantium corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores provident odio dolor dicta nulla sit temporibus vero ratione impedit ipsum rerum suscipit delectus aliquam quod architecto, accusantium nihil porro.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque autem quas, veritatis laboriosam sequi rerum esse molestias maiores exercitationem hic corporis, sit ducimus nihil et eum? Minima, velit ullam.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde nulla architecto maiores ea! Officia error consectetur culpa voluptatum eaque minima illum, ipsam aperiam illo ducimus similique quos accusantium fugit quidem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quod illo ullam ratione, magni aperiam soluta architecto, minima quisquam animi sit. Pariatur, deserunt voluptatibus laborum distinctio quis quos rem nulla?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero quia sequi. Perspiciatis fugit tenetur, repudiandae nam laudantium, magnam ex eos nostrum adipisci minima at, culpa similique. Nam, accusantium corporis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores provident odio dolor dicta nulla sit temporibus vero ratione impedit ipsum rerum suscipit delectus aliquam quod architecto, accusantium nihil porro.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit itaque autem quas, veritatis laboriosam sequi rerum esse molestias maiores exercitationem hic corporis, sit ducimus nihil et eum? Minima, velit ullam.
+    </p>        
+</body>
+</html>
